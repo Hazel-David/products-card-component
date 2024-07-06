@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Outfit,sans-serif;
+}
+body{
+    padding: .5rem;
+    background-color: hsl(217,54%,11%);
+}
+.card-component{
+    background-color: hsl(216,50%,16%);
+    padding: 1.5rem;
+    max-width:min-content;
+    margin: 5vh auto;
+    border-radius: 1rem;
+}
+hr{
+    height: 1px;
+    background-color:hsl(215, 32%, 27%);
+    border: none;
+    margin: 1.5rem 0;
+}
+.product-heading{
+    transition: color .5s ease-in-out;
+    margin-top: 1rem;
+    color: hsl(0, 0%, 100%);
+}
+.product-heading:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.etherium{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    
+}
+.product-heading, .etherium{
+    display: inline-block;
+}
+svg{
+    margin-right: .3rem;
+    position: relative;
+    top: 3px;
+}
+.days{
+    color:hsl(215, 51%, 70%);
+    font-weight: 600;
+    font-size: 1rem;
+    float: right;
+}
+.product-description, .creation{
+    color:hsl(215, 51%, 70%);
+}
+.name{
+    color: hsl(0, 0%, 100%);
+    transition: color .5s ease-in-out;
+}
+.name:hover{
+    color:hsl(178, 100%, 50%) ;
+    cursor: pointer;
+}
+.profile{
+    display: flex;
+    gap: 1rem;
+}
+.product-description{
+    margin:1rem 0;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 1.5rem;
+}
+#creator{
+    position: relative;
+    top: 5px;
+}
+.equilibrium img{
+    width: 350px;
+    border-radius: 1rem;
+}
+.equilibrium{
+    position: relative;
+}
+div .equilibrium svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.statistics{
+    position: relative;
+}
+.overlay{
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:hsla(178, 100%, 50%,.5);
+}
+.equilibrium:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+}
